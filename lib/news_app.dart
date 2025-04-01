@@ -58,6 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   context.setLocale(Locale("en"));
                 });
               }
+
           }, child: Text(LocaleKeys.authentication_email.tr(), style: TextStyle(fontSize: 30),)),
         ),
       ),
