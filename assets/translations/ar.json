@@ -1,0 +1,17 @@
+{
+  "authentication": {
+    "name": "الاسم",
+    "email" : "البريد الإلكتروني",
+    "password" : "كلمة المرور",
+    "confirm_password" : "تأكيد كلمة المرور",
+    "login" : "تسجيل الدخول",
+    "register" : "التسجيل",
+    "forget_password" : "نسيت كلمة المرور"
+  },
+  "home": "الصفحة الرئيسية",
+  "settings": "الإعدادات",
+  "language": "اللغة",
+  "english": "الإنجليزية",
+  "arabic": "العربية"
+
+}
