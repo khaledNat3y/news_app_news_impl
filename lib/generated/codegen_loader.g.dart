@@ -15,36 +15,34 @@ class CodegenLoader extends AssetLoader{
   }
 
   static const Map<String,dynamic> _ar = {
-  "authentication": {
-    "name": "الاسم",
-    "email": "البريد الإلكتروني",
-    "password": "كلمة المرور",
-    "confirm_password": "تأكيد كلمة المرور",
-    "login": "تسجيل الدخول",
-    "register": "التسجيل",
-    "forget_password": "نسيت كلمة المرور"
-  },
   "home": "الصفحة الرئيسية",
   "settings": "الإعدادات",
   "language": "اللغة",
   "english": "الإنجليزية",
-  "arabic": "العربية"
+  "arabic": "العربية",
+  "explore": "استكشاف",
+  "travel": "السفر",
+  "technology": "التقنية",
+  "entertainment": "الترفيه",
+  "cancel": "الغاء",
+  "search_result": "نتائج البحث",
+  "search": "بحث",
+  "business": "التجارة"
 };
 static const Map<String,dynamic> _en = {
-  "authentication": {
-    "name": "Name",
-    "email": "Email",
-    "password": "Password",
-    "confirm_password": "Confirm Password",
-    "login": "Login",
-    "register": "Register",
-    "forget_password": "Forget Password"
-  },
   "home": "Home",
   "settings": "Settings",
   "language": "Language",
   "english": "English",
-  "arabic": "Arabic"
+  "arabic": "Arabic",
+  "explore": "Explore",
+  "travel": "Travel",
+  "technology": "Technology",
+  "entertainment": "Entertainment",
+  "cancel": "Cancel",
+  "search_result": "Search Result",
+  "search": "Search",
+  "business": "Business"
 };
 static const Map<String, Map<String,dynamic>> mapLocales = {"ar": _ar, "en": _en};
 }

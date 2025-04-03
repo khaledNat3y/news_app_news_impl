@@ -1,16 +1,16 @@
 {
-  "authentication": {
-    "name": "Name",
-    "email" : "Email",
-    "password" : "Password",
-    "confirm_password" : "Confirm Password",
-    "login" : "Login",
-    "register" : "Register",
-    "forget_password" : "Forget Password"
-  },
   "home": "Home",
   "settings": "Settings",
   "language": "Language",
   "english": "English",
-  "arabic": "Arabic"
+  "arabic": "Arabic",
+  "explore": "Explore",
+  "travel": "Travel",
+  "technology": "Technology",
+  "entertainment": "Entertainment",
+  "cancel": "Cancel",
+  "search_result": "Search Result",
+  "search": "Search",
+  "business": "Business"
+
 }
