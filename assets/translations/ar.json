@@ -11,6 +11,7 @@
   "cancel": "الغاء",
   "search_result": "نتائج البحث",
   "search": "بحث",
-  "business": "التجارة"
+  "business": "التجارة",
+  "no_results": "لا توجد نتائج"
 
 }
