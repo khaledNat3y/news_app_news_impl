@@ -11,6 +11,7 @@
   "cancel": "Cancel",
   "search_result": "Search Result",
   "search": "Search",
-  "business": "Business"
+  "business": "Business",
+  "no_results": "No results found"
 
 }

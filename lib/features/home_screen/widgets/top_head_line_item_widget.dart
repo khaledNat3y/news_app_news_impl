@@ -2,38 +2,32 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:news_app_news_impl/core/helpers/spacing.dart';
+import 'package:news_app_news_impl/core/models/news_top_head_lines_model.dart';
 
 import '../../../core/theming/app_theme.dart';
 
 class TopHeadLineItemWidget extends StatelessWidget {
-  final String title;
-  final String authorName;
-  final String date;
-  final String? imageUrl;
-
+  final Article? article;
+  final void Function()? onTap;
   const TopHeadLineItemWidget({
-    super.key,
-    required this.title,
-    required this.authorName,
-    required this.date,
-    required this.imageUrl,
+    super.key, required this.article, this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
+    return GestureDetector(
+      onTap: onTap,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(8.r),
             child:
-                imageUrl != null
+            article?.urlToImage != null
                     ? CachedNetworkImage(
                       width: double.infinity,
                       height: 206.h,
-                      imageUrl: imageUrl ?? "",
+                      imageUrl: article?.urlToImage ?? "",
                       fit: BoxFit.cover,
                     )
                     : Image.asset(
@@ -44,9 +38,9 @@ class TopHeadLineItemWidget extends StatelessWidget {
                     ),
           ),
           verticalSpace(16),
-          Text(title, style: AppTheme.font18BlackSemiBold,),
+          Text(article!.title!, style: AppTheme.font18BlackSemiBold, maxLines: 3,),
           verticalSpace(12),
-          Text("$authorName . $date", style: AppTheme.font14lightBrownRegular,)
+          Text("${article?.author} . May 1, 2025", style: AppTheme.font14lightBrownRegular, maxLines: 1,)
         ],
       ),
     );

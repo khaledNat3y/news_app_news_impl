@@ -16,5 +16,6 @@ abstract class  LocaleKeys {
   static const search_result = 'search_result';
   static const search = 'search';
   static const business = 'business';
+  static const no_results = 'no_results';
 
 }
